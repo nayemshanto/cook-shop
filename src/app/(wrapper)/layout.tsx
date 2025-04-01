@@ -1,4 +1,6 @@
-import Navbar from '@/components/shared/navbar'
+
+
+import { Footer, Navbar } from '@/components/shared'
 import { IChildren } from '@/interface'
 import React, { FC } from 'react'
 
@@ -7,6 +9,7 @@ const layout:FC<IChildren> = ({children}) => {
     <div className='font-poppins'>
         <Navbar/>
         {children}
+        <Footer/>
     </div>
   )
 }

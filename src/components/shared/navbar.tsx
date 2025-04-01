@@ -21,7 +21,7 @@ const navItem = [
   },
 ];
 
-const Navbar = () => {
+export const Navbar = () => {
   const className =
     "uppercase text-sm active:font-medium pb-[20px] inline-block ";
   const pathName = usePathname();
@@ -56,4 +56,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
