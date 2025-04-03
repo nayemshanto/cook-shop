@@ -20,12 +20,12 @@ export const Footer = () => {
   ];
   return (
     <footer className=" flex flex-col justify-center items-center gap-2.5  w-fit mx-auto text-[#494949] ">
-      <div className="flex justify-between gap-20 items-end">
-        <Item>@ 2023 Cookshow</Item>
-        <p className=" text-base"> Cook your way</p>
-        <Item className="items-start"> All Rights Reserved</Item>
+      <div className="flex flex-col md:flex-row justify-center md:justify-between  gap-4 md:gap-20 items-center md:items-end">
+        <Item className="items-center md:items-end">@ 2023 Cookshow</Item>
+        <p className=" text-base text-center md:text-left"> Cook your way</p>
+        <Item className="items-center md:items-start"> All Rights Reserved</Item>
       </div>
-      <div className="flex justify-between items-center gap-2.5 w-full py-2.5 pb-5">
+      <div className="flex flex-wrap justify-center md:justify-between gap-4 w-full py-2.5 pb-5">
         {items.map(({label, link}) =>(
           <Link key={label} className="text-[14px]" href={link}>{label}</Link>
         ))}
